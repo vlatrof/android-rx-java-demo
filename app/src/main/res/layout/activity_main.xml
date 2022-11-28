@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logs:"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_logs"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="#EEEEEE"
+        android:scrollbars="vertical"
+        android:textColor="@color/black"
+        tools:text="bg thread: computing started\nbg thread: computing 0\nbg thread: computing 1\nbg thread: computing 2\nmain thread: btn clicked\nbg thread: computing 3\nbg thread: computing 4\nbg thread: computing completed" />
+
+    <Button
+        android:id="@+id/btn_start_computation_observable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Start computation observable" />
+
+    <Button
+        android:id="@+id/btn_start_computation_single"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Start computation single" />
+
+    <Button
+        android:id="@+id/btn_just_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#0000FF"
+        android:text="just click" />
+
+    <Button
+        android:id="@+id/btn_clear_logs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FF0000"
+        android:text="clear logs" />
+
+</LinearLayout>
