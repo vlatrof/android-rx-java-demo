@@ -27,18 +27,11 @@
         tools:text="bg thread: computing started\nbg thread: computing 0\nbg thread: computing 1\nbg thread: computing 2\nmain thread: btn clicked\nbg thread: computing 3\nbg thread: computing 4\nbg thread: computing completed" />
 
     <Button
-        android:id="@+id/btn_start_computation_observable"
+        android:id="@+id/btn_start_computation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Start computation observable" />
-
-    <Button
-        android:id="@+id/btn_start_computation_single"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Start computation single" />
 
     <Button
         android:id="@+id/btn_just_click"
